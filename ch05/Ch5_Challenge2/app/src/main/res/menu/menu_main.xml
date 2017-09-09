@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.brysonpayne.guessinggame.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/action_newgame"
+        android:title="New Game" />
+    <item
+        android:id="@+id/action_gamestats"
+        android:title="Game Stats" />
+    <item
+        android:id="@+id/action_about"
+        android:title="About" />
+</menu>
