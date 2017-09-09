@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brysonpayne.ch4_challenge3_madlibs.MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblSmallContainer"
+        android:layout_alignStart="@+id/lblSmallContainer"
+        android:layout_below="@+id/lblSmallContainer"
+        android:layout_marginTop="30dp"
+        android:text="Enter a food:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Dr. Payne's MadLibs App"
+        android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+    <TextView
+        android:id="@+id/lblBigAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="33dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="24dp"
+        android:text="Enter a big animal:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/lblPastTenseVerb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblBigAnimal"
+        android:layout_alignStart="@+id/lblBigAnimal"
+        android:layout_below="@+id/lblBigAnimal"
+        android:layout_marginTop="29dp"
+        android:text="Enter a past-tense verb:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/lblSmallContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblPastTenseVerb"
+        android:layout_alignStart="@+id/lblPastTenseVerb"
+        android:layout_below="@+id/lblPastTenseVerb"
+        android:layout_marginTop="31dp"
+        android:text="Enter a small container:"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <EditText
+        android:id="@+id/txtBigAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblBigAnimal"
+        android:layout_alignBottom="@+id/lblBigAnimal"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_toRightOf="@+id/lblBigAnimal"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblFood"
+        android:layout_alignBottom="@+id/lblFood"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/lblFood"
+        android:layout_toRightOf="@+id/lblFood"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtSmallContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblSmallContainer"
+        android:layout_alignBottom="@+id/lblSmallContainer"
+        android:layout_alignLeft="@+id/txtPastTenseVerb"
+        android:layout_alignStart="@+id/txtPastTenseVerb"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPastTenseVerb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblPastTenseVerb"
+        android:layout_alignBottom="@+id/lblPastTenseVerb"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/lblPastTenseVerb"
+        android:layout_toRightOf="@+id/lblPastTenseVerb"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make MadLib"
+        android:layout_below="@+id/txtFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:id="@+id/txtOutput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
